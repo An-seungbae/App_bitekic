@@ -16,10 +16,10 @@
 	</dependencies>
 	
 	<build>
-		<sourceDirectory>src/main/java</sourceDirectory>
+		<sourceDirectory>C/</sourceDirectory>
 		<resources>
 			<resource>
-				<directory>${project.basedir}/src/main/resources</directory>
+				<directory>C:/ProgramData/Jenkins/.jenkins/workspace/bitekic01</directory>
 				<excludes>
 					<exclude>**/*.java</exclude>
 				</excludes>
@@ -48,7 +48,7 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>3.2.1</version>
 				<configuration>
-					<warSourceDirectory>src/main/webapp</warSourceDirectory> <!-- war파일 디렉토리 -->
+					<warSourceDirectory>C/</warSourceDirectory> <!-- war파일 디렉토리 -->
 					<failOnMissingWebXml>false</failOnMissingWebXml> <!-- web.xml이 없을 때 에러를 낼건지 안낼건지 -->
 				</configuration>
 			</plugin>
