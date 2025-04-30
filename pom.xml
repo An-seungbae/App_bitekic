@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
 	<...>
-	<build>
 		<plugins>
-		
-			<plugin>
-				<artifactId>maven-clean-plugin</artifactId>
-				<version>3.1.0</version>
-			</plugin>
-			
-			<plugin>
-				<artifactId>maven-resources-plugin</artifactId>
-				<version>3.0.2</version>
-			</plugin>
-			
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.9.9</version>
+				<version>3.8.0</version>
+				<configuration>
+					<verbose>true</verbose>
+					<encoding>UTF-8</encoding>
+				</configuration>
+
+				<executions>
+					<execution>
+						<id>another compile in package compile</id>
+						<phase>package</phase>
+						<goals>
+							<goal>compile</goal>
+						</goals>
+						<configuration>
+							<verbose>true</verbose>
+							<encoding>MS949</encoding>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
-	
-             ...
-		</plugins>
-	</build>
+	</plugins>
 </project>
