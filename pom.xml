@@ -13,14 +13,14 @@
 	
 	<!-- 라이브러리 항목 -->
 	<dependencies>
-	 <dependency>
-	  <groupId>org.apache.maven.plugins</groupId>
-	  <artifactId>maven-war-plugin</artifactId>
-	  <version>3.2.0</version>
-	 </dependency>
 	</dependencies>
 	<build>
 	 <plugins>
+	   <plugin>
+		  <groupId>org.apache.maven.plugins</groupId>
+		  <artifactId>maven-war-plugin</artifactId>
+		  <version>3.2.0</version>	
+	    </plugin>	  
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId> <!-- 컴파일러가 사용하는 플러그인 -->
