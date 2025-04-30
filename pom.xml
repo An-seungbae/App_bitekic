@@ -6,7 +6,7 @@
     </prerequisites>
 
     <artifactId>bitekic</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0</version>
 	<packaging>war</packaging>
     <groupId>io.dropwizard</groupId>
     <name>Dropwizard Example Application</name>
@@ -89,7 +89,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-site-plugin</artifactId>
-                    <version>3.4</version>
+                    <version>3.9.9</version>
                 </plugin>
             </plugins>
         </pluginManagement>
